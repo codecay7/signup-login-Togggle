@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup-login Togggle
+    </title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="buttons">
+        <button id="Signup">Signup</button>
+        <button id="Login">Login</button>
+    </div>
+    <div class="container">
+
+        <div class="Loginimg">
+            <a href=""> <img src="Login.png" alt=""></a>
+        </div>
+        <div class="login-form">
+            <h1>Login</h1>
+            <form>
+                <label for="username" id="text-left">Username</label>
+                <input type="text" id="username" placeholder="Type your username" required>
+                <label for="password" id="text-left">Password</label>
+                <input type="password" id="password" placeholder="Type your password" required>
+                <a href="#">Forgot password?</a>
+                <button type="submit">LOGIN</button>
+            </form><br>
+            <div class="social-signup">
+                <p>Or Sign Up Using:</p><br>
+                <div class="social-icons">
+                    <a href="#"><img src="logo_google.png" alt="Google"></a>
+                    <a href="#"><img src="logo_twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="logo_facebook.png" alt="Facebook"></a>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="form-container">
+            <h1>Create an Account</h1>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <div class="terms">
+                <input type="checkbox" id="agree">
+                <label for="agree">I agree to the Terms of Service</label>
+            </div>
+            <button onclick="submitForm()" type="submitForm">REGISTER</button>
+            <a href="#" class="login-link">Already have an account? login.</a>
+
+        </div>
+
+        <div class="Signupimg">
+            <img src="Signup.png" alt="">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
